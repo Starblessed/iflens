@@ -1,0 +1,25 @@
+people:
+  empty: No people visible in the scene.
+  some: Some people visible in the scene.
+  crowded: Lively scene crowded with lots of people.
+
+time_of_day:
+  dawn: Early daylight with low ambient illumination.
+  morning: Morning daylight with moderate illumination.
+  noon: Bright overhead daylight with strong illumination.
+  afternoon: Afternoon daylight with warm angled illumination.
+  dusk: Fading daylight with low ambient illumination.
+  night: Nighttime with minimal natural illumination.
+
+precipitation:
+  clean: No precipitation.
+  light_rain: Light rainfall with minor visibility reduction.
+  heavy_rain: Heavy rainfall with significant visibility reduction.
+  stormfront: Severe storm with intense rainfall and turbulent conditions.
+  snow: Light snowfall with minor visibility reduction.
+  heavy_snow: Heavy snowfall with significant visibility reduction.
+  blizzard: Severe snowfall with strong winds and low visibility.
+
+planet:
+  earth: Stardard picture taken on planet Earth.
+  mars: Picture taken on planet Mars.

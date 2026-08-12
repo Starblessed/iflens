@@ -1,0 +1,22 @@
+# Very useful VSCode nonsense
+.vscode/
+
+# dotenv
+.env
+
+# Media and Development files
+output/
+input/
+data/
+tests/
+prompts/
+
+# Very useful Python nonsense
+__pycache__/
+.venv/
+
+# Work in Progress
+inquiry.py
+
+# User data
+conditions.yaml
