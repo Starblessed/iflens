@@ -33,9 +33,9 @@ Edite o arquivo `conditions-example.yaml` com as condições desejadas para clas
 
 ```yaml
 people:
-  empty: Clean atmosphere without visible fog.
-  some: Light mist diffused across the scene.
-  crowded: Thick fog atmosphere with object occlusion.
+  empty: No people visible in the scene.
+  some: Some people visible in the scene.
+  crowded: Lively scene crowded with lots of people.
 
 time_of_day:
   dawn: Early daylight with low ambient illumination.
