@@ -29,7 +29,7 @@ class ConditionClass:
     
     def get_random(self, exclude: list[str] | None = None) -> Condition:
         exclude = [] if not exclude else exclude
-        return random.choice([condition for condition in self.conditions.values() if condition not in exclude])
+        return random.choice([condition for condition in self.conditions.values() if condition.name not in exclude])
     
 @dataclass
 class ConditionSchema:
