@@ -1,20 +1,20 @@
-# iflens - Generative AI Data Augmentation Tool
+# iflens - Ferramenta de Aumento de Dados com IA Generativa
 ![Static Badge](https://img.shields.io/badge/Gemini-OK-green?logo=googlegemini) ![Static Badge](https://img.shields.io/badge/Groq-OK-green?logo=groq) ![Static Badge](https://img.shields.io/badge/OpenAI-WIP-yellow?logo=openai) ![Static Badge](https://img.shields.io/badge/Claude-TODO-black?logo=claude)
 
-## Installation
 
-### Clone the repository
+## Instalação
+
+### Clone o repositório
 ```bash
 git clone https://github.com/Starblessed/iflens.git .
 ```
 
-### Install the dependencies
+### Instale as dependências
 
-uv (recommended)
+uv (recomendado)
 ```bash
 uv sync
 ```
-
 python
 ```bash
 python -m venv .venv
@@ -25,11 +25,11 @@ python -m venv .venv
 pip install .
 ```
 
-## Usage
+## Utilização
 
-### Condition Configuration
+### Configuração de Condições
 
-Edit the `conditions-example.yaml` file with the desired conditions for image classification.
+Edite o arquivo `conditions-example.yaml` com as condições desejadas para classificação das imagens.
 
 ```yaml
 people:
@@ -55,25 +55,24 @@ precipitation:
   blizzard: Severe snowfall with strong winds and low visibility.
 
 planet:
-  earth: Standard picture taken on planet Earth.
+  earth: Stardard picture taken on planet Earth.
   mars: Picture taken on planet Mars.
 ```
 
-### API Keys
-
-Make a copy of the `.env.example` file, rename it to `.env`, and fill in the requested API keys:
+### Chaves de API
+Faça uma cópia do arquivo `.env.example`, renomeie-o para `.env` e preencha os campos com as chaves de API solicitadas:
 
 ```ini
 GEMINI_API_KEY=YOUR_KEY_HERE
 GROQ_API_KEY=YOUR_KEY_HERE
 ```
 
-### Pipeline Configuration
+### Configurações de Pipeline
 
-Modify the generation variables in the `iflens/main.py` script:
+Altere as variáveis de geração no script `iflens/main.py`
 
 ```python
-NUMBER_OF_SAMPLE_IMAGES: int = 1 # Should be equal to or smaller than the dataset size
+NUMBER_OF_SAMPLE_IMAGES: int = 1 # Should be equal or smaller than the dataset size
 
 DATASET_PATH: str = os.path.join("examples", "street")
 CONDITIONS_YAML_FILE: str = "conditions-example.yaml"
@@ -83,11 +82,10 @@ KEEP_CLASSES: list[str] = ["planet"] # Prevents the tool from varying specific c
 GENERATION_MODEL: str = "gemini-3.1-flash-lite-image"
 ```
 
-### Running
+### Execução
+Abra um console na pasta raiz e execute:
 
-Open a console in the project root directory and run:
-
-uv (recommended)
+uv (recomendado)
 ```bash
 uv run python -m iflens.main
 ```
@@ -101,8 +99,8 @@ python -m iflens.main
 ```
 
 ---
-### Attribution
+### Atribuição
 
-- [Car Picture 1](examples\cars\domaxi198-shelby-3821712.jpg): Image by <a href="https://pixabay.com/pt/users/domaxi198-10651890/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3821712">domaxi198</a> via <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3821712">Pixabay</a>
-- [Car Picture 2](examples\cars\mrefraim1-car-2667246.jpg): Image by <a href="https://pixabay.com/pt/users/mrefraim1-6230354/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2667246">mrefraim1</a> via <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2667246">Pixabay</a>
-- [Car Picture 3](examples\cars\mibro-race-car-7624025.jpg): Image by <a href="https://pixabay.com/pt/users/mibro-8455312/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7624025">mibro</a> via <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7624025">Pixabay</a>
+- [Foto de Carro 1](examples\cars\domaxi198-shelby-3821712.jpg): Imagem por <a href="https://pixabay.com/pt/users/domaxi198-10651890/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3821712">domaxi198</a> via <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3821712">Pixabay</a>
+- [Foto de Carro 2](examples\cars\mrefraim1-car-2667246.jpg): Imagem por <a href="https://pixabay.com/pt/users/mrefraim1-6230354/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2667246">mrefraim1</a> via <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2667246">Pixabay</a>
+- [Foto de Carro 3](examples\cars\mibro-race-car-7624025.jpg): Imagem por <a href="https://pixabay.com/pt/users/mibro-8455312/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7624025">mibro</a> via <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7624025">Pixabay</a>
