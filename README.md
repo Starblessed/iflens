@@ -97,3 +97,10 @@ python
 
 python -m iflens.main
 ```
+
+---
+### Attribution
+
+- [Car Picture 1](examples\cars\domaxi198-shelby-3821712.jpg): Imagem de <a href="https://pixabay.com/pt/users/domaxi198-10651890/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3821712">domaxi198</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3821712">Pixabay</a>
+- [Car Picture 2](examples\cars\mrefraim1-car-2667246.jpg): Imagem de <a href="https://pixabay.com/pt/users/mrefraim1-6230354/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2667246">mrefraim1</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2667246">Pixabay</a>
+- [Car Picture 3](examples\cars\mibro-race-car-7624025.jpg): Imagem de <a href="https://pixabay.com/pt/users/mibro-8455312/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7624025">mibro</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7624025">Pixabay</a>
